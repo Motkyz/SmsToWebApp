@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 //Прослушка на входящие sms-сообщения
 public class SmsReceiver extends BroadcastReceiver {
+    @SuppressLint("UnsafeProtectedBroadcastReceiver")
     @Override
     public void onReceive(Context context, Intent intent) {
         // Получаем SMS-сообщение
